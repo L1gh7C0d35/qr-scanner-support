@@ -4,27 +4,34 @@
 <body><main>
   <div class="eyebrow">PRIVACY POLICY</div>
   <h1>Your scans stay yours.</h1>
-  <p><strong>Effective date:</strong> September 26, 2026</p>
-  <p>QR &amp; Barcode Scanner is designed to perform its core scanning, code creation, and history functions on your iPhone.</p>
-  <h2>Information processed on device</h2>
+  <p><strong>Effective date:</strong> October 16, 2026</p>
+  <p>QR &amp; Barcode Scanner keeps basic camera scanning, static QR creation, and scan history on your device by default. The optional account, encrypted backup, and dynamic QR features are separate. You can scan codes without creating an account.</p>
+  <h2>Information processed on your device</h2>
   <ul>
-    <li>Camera frames used to recognize QR codes and barcodes.</li>
-    <li>Photos you explicitly select for code recognition.</li>
-    <li>Decoded QR/barcode values and scan history.</li>
-    <li>Content you enter when creating a QR code.</li>
-    <li>App preferences stored by iOS.</li>
+    <li>Camera frames and photos you select to recognize QR codes and barcodes.</li>
+    <li>Decoded values, saved history, labels, notes, favorites and collections.</li>
+    <li>Information you enter to create static QR codes, including optional Wi-Fi or contact data.</li>
+    <li>Appearance, haptics and other app preferences.</li>
   </ul>
-  <p>These items are not uploaded to the app developer as part of the core scanning experience. Scan history is stored locally on your device.</p>
-  <h2>Actions you choose</h2>
-  <p>When you choose an action such as opening a website, searching for a barcode, opening Maps, placing a call, composing a message or email, adding a contact or calendar event, saving an image, or sharing content, iOS or the selected third-party service receives the information necessary to perform that action. Those services operate under their own privacy policies.</p>
-  <h2>Purchases</h2>
-  <p>Premium purchases are processed by Apple through the App Store and StoreKit. Apple processes purchase and account information needed to complete and restore purchases. The app also contains optional support for RevenueCat as a purchase-entitlement service. When RevenueCat is configured in a release, it may process purchase, product, device, and anonymous customer-identification information needed to manage entitlements. It is not used for advertising or cross-app tracking.</p>
+  <p>For these core features, the app does not transmit camera frames or private scan history to its servers. Scans and creations can contain sensitive information, so only share them intentionally.</p>
+  <h2>Optional account and login</h2>
+  <p>If you choose to sign in for account-based features, our authentication provider, Clerk, processes sign-in credentials, your email address (when used for login), and an account identifier. We use that identifier to ensure only your account can manage your hosted QR codes or encrypted backups. No account is needed for standard scanning.</p>
+  <h2>Optional encrypted account sync</h2>
+  <p>When you explicitly enable encrypted sync, your scan history, collections and personal notes are encrypted on your device using a passphrase you create. Supabase stores the encrypted records and their account ID, record IDs, modification dates, and a random encryption salt. We do not transmit or retain your passphrase and cannot recover it. If you lose that passphrase, an existing encrypted backup may be inaccessible.</p>
+  <p>Cloud backup is off by default. You can disconnect an individual device or permanently delete the encrypted cloud backup from Sync Settings. Disconnecting alone does not delete a saved backup. Deleted scans can remain in local Recently Deleted for up to 30 days, except when you choose permanent deletion.</p>
+  <h2>Optional dynamic QR links</h2>
+  <p>If you create hosted dynamic QR links, Supabase stores your account ID, a link name, destination address, enabled state, and aggregate visit counts. The printed code opens our hosted redirect address rather than a direct static destination. Unlike a static QR code, a hosted code needs the redirect service to remain available. Deleting or disabling a hosted link can make printed codes stop redirecting.</p>
+  <p>To protect the service from abuse, redirect requests use a short-lived cryptographic digest of the request address for rate limiting. The application database does not save visitors' raw IP addresses, names, user agents or individual location histories. Temporary rate-limit records are scheduled for deletion after 48 hours; daily aggregate visit counts are scheduled for deletion after 90 days. All-time counts remain until you delete the link. Infrastructure providers may process ordinary request logs under their own policies.</p>
+  <h2>Product lookups and other choices</h2>
+  <p>If you explicitly request an external product lookup, only the selected barcode is sent to the chosen provider, such as Open Food Facts. You can also open GS1 verification in your browser. Those services have their own privacy terms. Opening links, copying content, calling, composing messages, and exporting files are user-initiated actions managed by iOS or the selected service. We do not silently run barcode product searches.</p>
+  <h2>Purchases and service providers</h2>
+  <p>Apple processes App Store payments and purchase entitlements. The app also includes optional purchase integration with RevenueCat; if enabled, it may process the information necessary to confirm your purchases. Clerk provides sign-in, and Supabase provides the optional sync and hosted QR service. We use these services for app functionality, not for advertising or cross-app tracking.</p>
   <h2>Advertising and tracking</h2>
-  <p>The app does not include advertising and does not request App Tracking Transparency permission for cross-app tracking. The app does not sell scanned content or personal information.</p>
-  <h2>Deletion and retention</h2>
-  <p>You can delete individual history entries or clear scan history in the app. Deleting the app removes its local app data according to iOS behavior. App Store purchase records remain subject to Apple's retention practices.</p>
+  <p>The app does not show third-party advertising or request Apple's App Tracking Transparency permission for cross-app tracking. We do not sell private scan contents or personal information.</p>
+  <h2>Retention and deletion</h2>
+  <p>On-device History can be deleted through the app; Recently Deleted items are retained for up to 30 days unless deleted permanently. You can delete optional encrypted cloud backups separately and remove hosted dynamic links, including their aggregate scan statistics. Account and payment information held by providers may be subject to their legal retention obligations.</p>
   <h2>Contact</h2>
-  <p>For privacy questions or support, use the <a href="support.html">official support page</a>. Do not include private QR contents, Wi-Fi passwords, contact details, or other sensitive scan data in a public support request.</p>
+  <p>For privacy questions or support, visit the <a href="support.html">support page</a>. Do not include passwords, private QR contents, contact details, or other sensitive data in public requests.</p>
   <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></nav>
-  <p><small>Last updated September 26, 2026.</small></p>
+  <p><small>Last updated October 16, 2026.</small></p>
 </main></body></html>
