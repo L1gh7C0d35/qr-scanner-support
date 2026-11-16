@@ -72,6 +72,21 @@ def main():
             "Old free-only policy incorrectly applied to paid-capable releases")
     require("TestFlight use Apple's Sandbox" in support,
             "TestFlight support must distinguish Sandbox from real charges")
+    # The published support channel is a PUBLIC GitHub issue tracker. Never
+    # imply that posting legacy cloud-account identifiers there is private.
+    require("Privacy and earlier test-account data" in support,
+            "Missing legacy account/cloud-data privacy support guidance")
+    require("Request%20a%20private%20privacy-support%20channel" in support,
+            "Missing safe non-identifying intake request")
+    require("do not place your email address, account identifier" in support,
+            "Public issue tracker must warn against sharing sensitive identifiers")
+    require("A secure contact and verification process must be arranged" in support,
+            "Do not imply a private data-deletion service is already configured")
+    require("before account or cloud records can be reviewed or deleted" in privacy,
+            "Privacy policy must not promise deletion without secure verification")
+    require("public support issue" in privacy and "support.html" in privacy,
+            "Privacy notice must route deletion questions safely")
+    print("PASS_LEGACY_TEST_ACCOUNT_PRIVACY_REQUEST_SAFETY")
     print("PASS_VERSION_AWARE_PURCHASE_AND_PRIVACY_DISCLOSURES")
     print("LOCAL_ONLY_NO_PUBLICATION_NO_APPLE_WRITE")
 
